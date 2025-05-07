@@ -20,11 +20,11 @@ return {
 			t({ "}", "" }), -- End class, add empty line
 
 			-- Common Packages (add/remove as needed)
-			t({ "\\usepackage[utf8]{inputenc} % Input encoding (for pdflatex)" }),
-			t({ "\\usepackage[T1]{fontenc}    % Font encoding (for pdflatex)" }),
-			t({ "\\usepackage{amsmath}        % Math formulas" }),
-			t({ "\\usepackage{amssymb}        % Math symbols" }),
-			t({ "\\usepackage{graphicx}       % Include images" }),
+			t({ "\\usepackage[utf8]{inputenc} % Input encoding (for pdflatex)", "" }),
+			t({ "\\usepackage[T1]{fontenc}    % Font encoding (for pdflatex)", "" }),
+			t({ "\\usepackage{amsmath}        % Math formulas", "" }),
+			t({ "\\usepackage{amssymb}        % Math symbols", "" }),
+			t({ "\\usepackage{graphicx}       % Include images", "" }),
 			t({ "\\usepackage[" }),
 			-- Placeholder 3: Geometry options (e.g., margin=1in)
 			i(3, "margin=1in"),
