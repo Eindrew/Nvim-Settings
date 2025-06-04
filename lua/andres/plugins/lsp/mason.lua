@@ -1,7 +1,8 @@
 return {
 	"williamboman/mason.nvim",
+	version = "v1.8.3",
 	dependencies = {
-		"williamboman/mason-lspconfig.nvim",
+		{ "williamboman/mason-lspconfig.nvim", version = "v1.32.0" },
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 	},
 	config = function()
