@@ -76,6 +76,15 @@ return {
 		-- used to enable autocompletion (assign to every lsp server config)
 		local capabilities = cmp_nvim_lsp.default_capabilities()
 
+		local function get_python_path()
+			local venv_path = vim.fn.getcwd() .. "/.venv/bin/python"
+			if vim.fn.executable(venv_path) == 1 then
+				return venv_path
+			else
+				return vim.fn.exepath("python") -- fallback to system python
+			end
+		end
+
 		-- Change the Diagnostic symbols in the sign column (gutter)
 		-- (not in youtube nvim video)
 		vim.diagnostic.config({
